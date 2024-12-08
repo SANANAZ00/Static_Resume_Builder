@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Resume</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="resume-container">
+        <!-- Personal Information Section with Profile Image -->
+        <section class="resume-section" id="personal-info">
+            <h2 onclick="toggleSection('personal-info-details')">Personal Information</h2>
+            <div id="personal-info-details" class="section-details">
+                <img src="./profile.webp" alt="Profile Picture" class="profile-image">
+                <p><strong>Name</strong>: Sana Naz</p>
+                <p><strong>Contact</strong>: 123-456-7890</p>
+                <p><strong>Email</strong>: sananaz6655@gmail.com</p>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section class="resume-section" id="education">
+            <h2 onclick="toggleSection('education-details')">Education</h2>
+            <div id="education-details" class="section-details">
+                <p><strong>Degree</strong>: Bachelor’s in Computer Sciencey</p>
+                <p><strong>University</strong>: Karachi University</p>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="resume-section" id="skills">
+            <h2 onclick="toggleSection('skills-details')">Skills</h2>
+            <div id="skills-details" class="section-details">
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>TypeScript</li>
+                    <li>React</li>
+                    <li>Flutter Developer</li>
+                    <li>Next js</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Work Experience Section -->
+        <section class="resume-section" id="work-experience">
+            <h2 onclick="toggleSection('work-experience-details')">Work Experience</h2>
+            <div id="work-experience-details" class="section-details">
+                <p> <strong>Job Title </strong>: Front-end Developer</p>
+                <p><strong>Company</strong> :  Codsoft.</p>
+                <p><strong>Responsibilities </strong>: Developing responsive web application</p>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

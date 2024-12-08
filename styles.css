@@ -1,0 +1,95 @@
+/* Body and Container Styling */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    margin: 0;
+}
+
+.resume-container {
+    max-width: 600px;
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    border: 3px solid #4a90e2;
+    transition: transform 0.3s ease;
+}
+
+.resume-container:hover {
+    transform: scale(1.03);
+}
+
+/* Profile Image Styling */
+.profile-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid #4a90e2;
+    display: block;
+    margin: 0 auto 15px;
+}
+
+/* Section Headings */
+.resume-section h2 {
+    font-size: 1.4em;
+    background: linear-gradient(90deg, #4a90e2, #50b3f2);
+    color: white;
+    padding: 12px;
+    margin: 0 0 10px;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s;
+}
+
+.resume-section h2:hover {
+    background: linear-gradient(90deg, #005999, #003f6d);
+    color: #f0f8ff;
+    transform: translateY(-3px);
+}
+
+/* Section Details */
+.section-details {
+    padding: 15px;
+    background: #f0f8ff;
+    border: 2px solid #4a90e2;
+    border-radius: 10px;
+    transition: max-height 0.4s ease, opacity 0.4s ease;
+    overflow: hidden;
+    opacity: 1;
+    max-height: 1000px; /* Adjust as needed */
+}
+
+/* Hide Class */
+.hidden {
+    opacity: 0;
+    max-height: 0;
+    padding: 0;
+}
+
+/* Text and List Styling */
+.section-details p, .section-details ul {
+    font-size: 1.1em;
+    margin: 10px 0;
+}
+
+.section-details ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .resume-container {
+        padding: 15px;
+    }
+
+    .resume-section h2 {
+        font-size: 1.2em;
+    }
+}
+
+
